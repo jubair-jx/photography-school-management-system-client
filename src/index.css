@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* font-family: 'Geologica', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Signika Negative', sans-serif; */
+* {
+  font-family: "Geologica", sans-serif;
+}
+/* .drawer-side a.active {
+  color: aquamarine;
+}
+.drawer-side a {
+  color: white;
+} */
