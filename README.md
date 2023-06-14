@@ -13,9 +13,13 @@ Welcome to WonderRoots Scholars, where imagination takes flight and learning bec
 - Show All Kind of Details & Description about School
 - Admin Has own Dashboard
 - Instructor Has Own Dasboard
-- Student Has Own Dasboard
+- Instructor Can do add new classes,
+- Student Has Own Dasboard,
 - Full Stack Application
 - Admin Can do Role Manage to all of users
+- Admin Can do many things like, make admin, make instructor, by default every user will be student,
+- Students Can select course then he/she pay his/her course price
+- Student Can payment his/her course,
 
 ## Technology Stack
 
@@ -23,6 +27,7 @@ Welcome to WonderRoots Scholars, where imagination takes flight and learning bec
 - Node JS, Express JS, Mongo DB for the Backend
 - React Liberay & Hooks
 - React Hooks, Axios, Tanstack Query, JWT,
+- A Full Stack Application
 - TailWind CSS for frontend styling
 - Git & Github for version control
 - Server Host : Vercel
