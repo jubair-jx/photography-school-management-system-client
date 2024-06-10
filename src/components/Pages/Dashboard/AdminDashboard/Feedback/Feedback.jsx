@@ -14,7 +14,7 @@ const Feedback = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("https://wonder-server-eight.vercel.app/feedback", {
+    fetch(`https://wonder-server-eight.vercel.app/feedback/${id}`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -31,10 +31,10 @@ const Feedback = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <textarea
             {...register("textarea", { required: true })}
-            className="border border-gray-300 rounded-l-lg py-2 px-4 block w-full resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="border border-gray-300 rounded-l-lg h-40 w-96 py-2 px-4 block  resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Enter your text"
           ></textarea>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded-r-lg ml-1">
+          <button className="bg-blue-500 mt-1 text-white py-2 px-4 rounded-r-lg ml-1">
             Send
           </button>
         </form>

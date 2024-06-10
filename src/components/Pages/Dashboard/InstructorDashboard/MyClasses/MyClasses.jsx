@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 const MyClasses = () => {
   const [classs, setClasss] = useState("");
-  const { id } = useParams();
+  const [feedback, setFeedback] = useState([]);
 
   const [axiosSecure] = useAxiosSecure();
   const { user } = useContext(AuthContext);
@@ -18,12 +18,14 @@ const MyClasses = () => {
     return res.data;
   });
 
-  // useEffect(() => {
-  //   // console.log(classs);
-  //   fetch(`https://wonder-server-eight.vercel.app/feedback`)
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
+  useEffect(() => {
+    // fetchFeedback();
+    // classes.map((classItem) => {
+    //   const feedback = classes.find(classItem.)
+    //   // console.log(classItem._id);
+    // });
+  }, [classes]);
+
   return (
     <div className="w-full">
       <Helmet>

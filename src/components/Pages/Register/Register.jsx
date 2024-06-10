@@ -1,13 +1,21 @@
-import React, { useContext, useState } from "react";
-import registrationImg from "../../../assets/registration.jpg";
-import Logo from "../../../assets/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import { AuthContext } from "../../../Context/AuthProvider";
 import SocialLogin from "../../../Shared/SocialLogin/SocialLogin";
-import Swal from "sweetalert2";
+import Logo from "../../../assets/logo.png";
+import registrationImg from "../../../assets/registration.jpg";
 const Register = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+    });
+  }, []);
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -66,7 +74,10 @@ const Register = () => {
       <Helmet>
         <title>WRS || Register</title>
       </Helmet>
-      <div className=" flex h-full flex-wrap items-center bg-white justify-center lg:justify-between">
+      <div
+        data-aos="fade-down"
+        className=" flex h-full flex-wrap items-center bg-white justify-center lg:justify-between container mx-auto"
+      >
         <div className=" md:mb-0 md:w-8/12 lg:w-6/12">
           <img src={registrationImg} className="w-full" alt="Phone image" />
         </div>

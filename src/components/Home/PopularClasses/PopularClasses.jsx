@@ -1,7 +1,7 @@
+import { useQuery } from "@tanstack/react-query";
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
 import ShowPopularClasses from "./ShowPopularClasses";
 
 const PopularClasses = () => {
@@ -22,7 +22,10 @@ const PopularClasses = () => {
         heading={"Popular Classes"}
         subHeading={"Show Our Awesome Classes "}
       ></SectionTitle>
-      <div className="grid md:grid-cols-2 gap-4 md:px-10 px-5 py-5">
+      <div
+        className="grid md:grid-cols-2 gap-4 md:px-10 px-5 py-5 "
+        data-aos="fade-down"
+      >
         {approvedClass.slice(0, 6).map((classes) => (
           <ShowPopularClasses
             key={classes._id}

@@ -29,6 +29,7 @@ Welcome to WonderRoots Scholars, where imagination takes flight and learning bec
 - React Hooks, Axios, Tanstack Query, JWT,
 - A Full Stack Application
 - TailWind CSS for frontend styling
+- Payment System Intregation(Stripe)
 - Git & Github for version control
 - Server Host : Vercel
 

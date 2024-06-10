@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
+import logo from "../../assets/logo.png";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);

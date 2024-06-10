@@ -1,7 +1,7 @@
+import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
 import ShowPopularInstructor from "./ShowPopularInstructor";
 
 const PopularInstructor = () => {
@@ -21,7 +21,10 @@ const PopularInstructor = () => {
         heading={"Popular Instructor"}
         subHeading={"Meet Our Awesome Popular Instructor"}
       ></SectionTitle>
-      <div className="grid md:grid-cols-3 px-2 md:px-28 py-4 gap-4">
+      <div
+        data-aos="fade-down"
+        className="grid md:grid-cols-3 px-2 md:px-28 py-4 gap-4"
+      >
         {instructor.slice(0, 6).map((instructor) => (
           <ShowPopularInstructor
             key={instructor._id}

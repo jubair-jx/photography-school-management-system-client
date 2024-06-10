@@ -14,7 +14,10 @@ const Testimonial = () => {
           className=" text-center bg-gradient-to-r animate-text from-gray-900 via-gray-600 to-violet-400 bg-clip-text text-transparent mt-8 font-extrabold text-4xl"
         ></h2>
 
-        <div data-aos="fade-up" className="bg-gray-100 py-8 mt-5 ">
+        <div
+          data-aos="fade-up"
+          className="bg-gray-100 py-8 mt-5 rounded-md mb-10"
+        >
           <div className="max-w-6xl mx-auto ">
             <h2
               data-aos="fade-up"
