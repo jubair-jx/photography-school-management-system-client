@@ -50,6 +50,6 @@ This is also contributions by me
 
 ## Live Link
 
-Live Link : https://wonder-roots-scholars.web.app/
+Live Link : https://wonder-root-sch.netlify.app/
 
 - Go check it out the here this link :
