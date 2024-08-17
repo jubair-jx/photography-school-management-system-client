@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
-import useClass from "../../../../../hooks/useClass";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { motion } from "framer-motion";
+import useClass from "../../../../../hooks/useClass";
 
 const MySelectedClass = () => {
   const [classess, refetch] = useClass();
@@ -44,7 +44,7 @@ const MySelectedClass = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.0 }}
+        transition={{ duration: 0.6 }}
         animate={{ pathLength: 1 }}
       >
         <div className="uppercase font-semibold h-[60px] flex justify-evenly items-center">
@@ -56,7 +56,7 @@ const MySelectedClass = () => {
           </Link>
         </div>
         <div className="overflow-x-auto  overflow-hidden rounded-lg border border-gray-200 shadow-md md:m-1">
-          <table className="table w-full collapse  border-collapse bg-gray-100 text-left text-sm text-gray-500">
+          <table className="table w-full collapse overflow-x-auto  border-collapse bg-gray-100 text-left text-sm text-gray-500">
             {/* head */}
             <thead className="text-center font-extrabold bg-indigo-950 text-white">
               <tr>

@@ -1,20 +1,25 @@
-import React from "react";
-
+// eslint-disable-next-line react/prop-types
 const ShowPopularClasses = ({ classes }) => {
+  // eslint-disable-next-line react/prop-types
   const { availabeSeats, classImage, className, instructorName, price } =
     classes;
+
   return (
     <div>
       <div className="py-2">
-        <div className="flex mx-auto bg-gradient-to-l justify-center items-center shadow-2xl rounded-lg overflow-hidden">
-          <div className="w-[35%] h-52 justify-center flex items-center ">
-            <img className="rounded-lg" src={classImage} alt="Class Image" />
+        <div className="flex cursor-pointer bg-gradient-to-l border border-gray-400 border-dashed  shadow-lg rounded-lg overflow-hidden items-center">
+          <div className="">
+            <img
+              className="rounded-xl w-[80%] h-44 px-3  "
+              src={classImage}
+              alt="Class Image"
+            />
           </div>
           <div className="w-2/3 p-4">
-            <h1 className="text-gray-900 dark:text-gray-500 font-bold text-[16px] md:text-xl">
-              {className}
-            </h1>
-            <p className="mt-2 font-medium">Instructor : {instructorName}</p>
+            <h1 className={` font-bold text-[16px] md:text-xl`}>{className}</h1>
+            <p className="mt-2 font-medium capitalize">
+              Instructor : {instructorName}
+            </p>
             <p className="mt-2">Availabe Seats : {availabeSeats}</p>
             <div className="flex item-center mt-2">
               <svg

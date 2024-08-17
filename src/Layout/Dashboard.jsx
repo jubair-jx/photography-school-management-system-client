@@ -1,17 +1,10 @@
-import React from "react";
-import logo from "../assets/logo.png";
+import { motion } from "framer-motion";
+
+import { FaHome } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
-import {
-  FaBook,
-  FaHome,
-  FaKaaba,
-  FaUsers,
-  FaUtensils,
-  FaWallet,
-} from "react-icons/fa";
+import logo from "../assets/logo.png";
 import useAdmin from "../hooks/useAdmin";
 import useInstructor from "../hooks/useInstructor";
-import { motion } from "framer-motion";
 import useStudent from "../hooks/useStudent";
 
 const Dashboard = () => {
@@ -30,9 +23,9 @@ const Dashboard = () => {
           <Outlet></Outlet>
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
+            className="btn mt-4 btn-primary drawer-button lg:hidden"
           >
-            Open drawer
+            Open bar
           </label>
         </div>
         <div className="drawer-side bg-gray-700">
