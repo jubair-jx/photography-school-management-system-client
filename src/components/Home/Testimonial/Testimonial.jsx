@@ -28,7 +28,7 @@ const Testimonial = () => {
             <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div
                 data-aos="fade-up"
-                className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 bg-clip-text text-transparent rounded-lg shadow-2xl p-6"
+                className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 border bg-clip-text text-transparent rounded-lg shadow-lg p-6"
               >
                 <p className="text-gray-600 mb-4">
                   "This toy marketplace has the best selection of toys for all
@@ -49,7 +49,7 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 bg-clip-text text-transparent rounded-lg shadow-2xl p-6">
+              <div className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 bg-clip-text text-transparent border rounded-lg shadow-lg p-6">
                 <p className="text-gray-600 mb-4 ">
                   "I am extremely satisfied with the quality of the toys I
                   purchased from this marketplace. The variety of options is
@@ -71,7 +71,7 @@ const Testimonial = () => {
 
               <div
                 data-aos="fade-up"
-                className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 bg-clip-text text-transparent rounded-lg shadow-2xl p-6"
+                className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 bg-clip-text border text-transparent rounded-lg shadow-lg p-6"
               >
                 <p className="text-gray-600 mb-4">
                   "I had a wonderful experience shopping for toys on this

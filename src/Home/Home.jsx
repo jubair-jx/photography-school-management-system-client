@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Banner from "../components/Home/Banner/Banner";
+import Contact from "../components/Home/Contact/Contact";
 import Featured from "../components/Home/Featured/Featured";
 import PopularClasses from "../components/Home/PopularClasses/PopularClasses";
 import PopularInstructor from "../components/Home/PopularInstructor/PopularInstructor";
@@ -24,6 +25,7 @@ const Home = () => {
       <PopularInstructor></PopularInstructor>
       <Featured />
       <Testimonial></Testimonial>
+      <Contact />
     </div>
   );
 };
