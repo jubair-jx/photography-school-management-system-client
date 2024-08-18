@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -148,14 +148,6 @@ const Navbar = () => {
               <></>
             )}
 
-            <li className="nav-item bg-white rounded-md pr-3 pl-2">
-              <Link
-                to="/blog"
-                className="px-1 py-2 flex rounded-lg hover:bg-gray-50 items-center text-xs uppercase font-semibold leading-snug duration-300 text-[#0a0a0a] hover:text-orange-400"
-              >
-                <span className="ml-2 text-md ">Blog</span>
-              </Link>
-            </li>
             {/* Swap Button / Toggle Button */}
             <label className="swap swap-rotate pl-14">
               {/* this hidden checkbox controls the state */}

@@ -1,4 +1,5 @@
 import CommonDashboardHeaderTitle from "../../../../../Shared/DashboardTitle/DashboardTitle";
+import CourseOverview from "../../Charts/Overview";
 
 const AdminHome = () => {
   const data = [
@@ -176,6 +177,10 @@ const AdminHome = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className=" font-poppins w-full sm:w-full bg-white shadow-md border rounded border-dashed mx-auto">
+        <CourseOverview />
       </div>
     </div>
   );

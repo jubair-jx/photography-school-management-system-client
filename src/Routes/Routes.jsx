@@ -18,6 +18,7 @@ import MyEnrolledClass from "../components/Pages/Dashboard/StudentDashboard/MyEn
 import MySelectedClass from "../components/Pages/Dashboard/StudentDashboard/MySelectedClass/MySelectedClass";
 import Payment from "../components/Pages/Dashboard/StudentDashboard/Payment/Payment";
 import PaymentHistory from "../components/Pages/Dashboard/StudentDashboard/PaymentHistory/PaymentHistory";
+import StudentHome from "../components/Pages/Dashboard/StudentDashboard/StudentHome/StudentHome";
 import ErrorPage from "../components/Pages/ErrorPage/ErrorPage";
 import Instructors from "../components/Pages/Instructors/Instructors";
 import Login from "../components/Pages/Login/Login";
@@ -136,6 +137,14 @@ const router = createBrowserRouter([
         element: (
           <StudentRoute>
             <Payment></Payment>
+          </StudentRoute>
+        ),
+      },
+      {
+        path: "student",
+        element: (
+          <StudentRoute>
+            <StudentHome />
           </StudentRoute>
         ),
       },
