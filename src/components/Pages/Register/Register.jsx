@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../../Context/AuthProvider";
 import SocialLogin from "../../../Shared/SocialLogin/SocialLogin";
 import Logo from "../../../assets/logo.png";
-import registrationImg from "../../../assets/registration.jpg";
+import registrationImg from "../../../assets/registration.png";
 const Register = () => {
   useEffect(() => {
     AOS.init({
@@ -75,7 +75,7 @@ const Register = () => {
       </Helmet>
       <div
         data-aos="fade-down"
-        className=" flex h-full flex-wrap items-center bg-white justify-center lg:justify-between container mx-auto"
+        className=" flex h-full flex-wrap items-center justify-center lg:justify-between container mx-auto"
       >
         <div className=" md:mb-0 md:w-8/12 lg:w-6/12">
           <img src={registrationImg} className="w-full" alt="Phone image" />
@@ -86,7 +86,7 @@ const Register = () => {
             <div className="flex flex-col items-center justify-center   mx-auto ">
               <a
                 href="#"
-                className="flex gap-2 items-center mb-6 text-2xl font-semibold text-gray-900 "
+                className="flex gap-2 items-center mb-6 text-2xl font-semibold"
               >
                 <img className="w-10 rounded-3xl" src={Logo} alt="" />
                 <h2

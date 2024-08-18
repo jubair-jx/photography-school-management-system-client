@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { FaEye } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../../Context/AuthProvider";
 import SocialLogin from "../../../Shared/SocialLogin/SocialLogin";
-import loginImg from "../../../assets/login.jpg";
+import loginImg from "../../../assets/login.png";
 import Logo from "../../../assets/logo.png";
 const Login = () => {
   //TODO: Some Upgradtion Here
@@ -56,7 +56,7 @@ const Login = () => {
       <section className="py-6 container mx-auto">
         <div
           data-aos="fade-up"
-          className=" flex h-full flex-wrap items-center bg-white justify-center lg:justify-between"
+          className=" flex h-full flex-wrap items-center  justify-center lg:justify-between"
         >
           <div className=" md:mb-0 md:w-8/12 lg:w-6/12">
             <img src={loginImg} className="w-full" alt="Phone image" />
