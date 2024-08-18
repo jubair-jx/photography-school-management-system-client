@@ -5,7 +5,7 @@ const Testimonial = () => {
   return (
     <div className="mt-10">
       <SectionTitle
-        heading={"Testimonial"}
+        heading={"Client Says"}
         subHeading={"What Our Client Says..?"}
       ></SectionTitle>
       <div>
@@ -25,7 +25,7 @@ const Testimonial = () => {
             >
               Here is Our Client ....
             </h2>
-            <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 text-center px-3">
               <div
                 data-aos="fade-up"
                 className="bg-gradient-to-r animate-text from-gray-400 via-gray-400 to-violet-600 border bg-clip-text text-transparent rounded-lg shadow-lg p-6"
