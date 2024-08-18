@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
-const CourseOverview = () => {
+// eslint-disable-next-line react/prop-types
+const CourseOverview = ({ titleText = "Weekly Course Selling Overview" }) => {
   const [chartData] = useState({
     series: [
       {
@@ -33,7 +34,7 @@ const CourseOverview = () => {
         },
       },
       title: {
-        text: "Weekly Course Overview",
+        text: titleText,
       },
       tooltip: {
         x: {

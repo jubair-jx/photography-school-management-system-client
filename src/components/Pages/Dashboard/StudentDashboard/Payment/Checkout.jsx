@@ -1,10 +1,11 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import React, { useContext, useEffect, useState } from "react";
-import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
-import { AuthContext } from "../../../../../Context/AuthProvider";
+import { useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../../../../Context/AuthProvider";
+import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
 import "../Payment/Checkout.css";
 
+// eslint-disable-next-line react/prop-types
 const Checkout = ({ price, classess }) => {
   const stripe = useStripe();
   const { user } = useContext(AuthContext);
@@ -68,11 +69,12 @@ const Checkout = ({ price, classess }) => {
         email: user?.email,
         transctionId: transcId,
         price,
-        quantity: classess.length,
+        quantity: classess?.length,
         date: new Date(),
-        classId: classess.map((item) => item._id),
+        classId: classess?.map((item) => item._id),
         classItem: classess.map((item) => item.ClassId),
 
+        // eslint-disable-next-line react/prop-types
         className: classess.map((item) => item.className),
       };
 
@@ -105,11 +107,11 @@ const Checkout = ({ price, classess }) => {
           }}
         />
         <button
-          className="btn btn-primary btn-xs"
+          className="btn btn-primary btn-sm mt-4"
           type="submit"
           disabled={!stripe || processing}
         >
-          Pay
+          Pay Now
         </button>
       </form>
       {cardError && <p className="text-red-600 text-lg ml-10">{cardError}</p>}

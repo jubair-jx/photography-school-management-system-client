@@ -142,16 +142,11 @@ const AdminHome = () => {
       count: 61,
     },
   ];
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 800,
-  //     once: false,
-  //   });
-  // }, []);
+
   return (
     <div>
       <CommonDashboardHeaderTitle
-        mainTitle="Boss!!! Welcome to the Dashboard"
+        mainTitle="Hii!! Welcome to the Dashboard"
         secondaryTitle={"You can manage and see all stuff"}
       />
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-3 mt-6">
@@ -179,7 +174,7 @@ const AdminHome = () => {
         ))}
       </div>
 
-      <div className=" font-poppins w-full sm:w-full bg-white shadow-md border rounded border-dashed mx-auto">
+      <div className=" font-poppins w-full sm:w-[98%] bg-white shadow-md border rounded border-dashed mx-auto">
         <CourseOverview />
       </div>
     </div>
