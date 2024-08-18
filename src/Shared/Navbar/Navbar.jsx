@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
+  console.log(user);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );

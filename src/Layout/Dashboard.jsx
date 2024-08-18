@@ -19,11 +19,11 @@ const Dashboard = () => {
     <div>
       <div className="drawer  lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center ">
+        <div className="drawer-content px-6">
           <Outlet></Outlet>
           <label
             htmlFor="my-drawer-2"
-            className="btn mt-4 btn-primary drawer-button lg:hidden"
+            className="btn mt-4 mx-auto btn-primary drawer-button lg:hidden"
           >
             Open bar
           </label>
@@ -325,8 +325,8 @@ const Dashboard = () => {
               <div className="mt-2 text-white px-4 py-4">
                 <li className="hover:text-white flex gap-2 ">
                   <FaHome className="text-2xl"></FaHome>
-                  <NavLink to="/dashboard/adminHome" className="text-white ">
-                    Admin Home
+                  <NavLink to="/dashboard/admin" className="text-white ">
+                    Admin Dashboard
                   </NavLink>
                 </li>
                 <li className="mt-4 flex gap-2">

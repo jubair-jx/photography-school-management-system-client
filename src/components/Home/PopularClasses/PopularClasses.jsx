@@ -15,7 +15,7 @@ const PopularClasses = () => {
     const filter = classes.filter((classes) => classes.status === "approved");
     setApporvedClass(filter);
   }, [classes]);
-  console.log(approvedClass);
+
   return (
     <div className="mt-6">
       <SectionTitle

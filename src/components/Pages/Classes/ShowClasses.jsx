@@ -43,7 +43,7 @@ const ShowClasses = (classes) => {
         cancelButtonColor: "#d33",
         confirmButtonText: "Login Now",
       }).then((result) => {
-        if (result.isConfirmed) {
+        if (result?.isConfirmed) {
           navigate("/login", { state: { from: location } });
         }
       });

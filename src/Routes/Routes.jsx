@@ -1,27 +1,27 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../Layout/MainLayout";
+import AdminRoute from "../AdminRoute/AdminRoute";
 import Home from "../Home/Home";
+import InstructorRoute from "../InstructorRoute/InstructorRoute";
+import Dashboard from "../Layout/Dashboard";
+import MainLayout from "../Layout/MainLayout";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import StudentRoute from "../StudentRoute/StudentRoute";
+import Classes from "../components/Pages/Classes/Classes";
+import AdminHome from "../components/Pages/Dashboard/AdminDashboard/AdminHome/AdminHome";
+import Feedback from "../components/Pages/Dashboard/AdminDashboard/Feedback/Feedback";
+import ManageClasses from "../components/Pages/Dashboard/AdminDashboard/ManageClasses/ManageClasses";
+import ManageUser from "../components/Pages/Dashboard/AdminDashboard/ManageUser/ManageUser";
+import AddClass from "../components/Pages/Dashboard/InstructorDashboard/AddClass/AddClass";
+import MyClasses from "../components/Pages/Dashboard/InstructorDashboard/MyClasses/MyClasses";
+import TotalEnrolled from "../components/Pages/Dashboard/InstructorDashboard/TotalEnrolled/TotalEnrolled";
+import MyEnrolledClass from "../components/Pages/Dashboard/StudentDashboard/MyEnrolledClass/MyEnrolledClass";
+import MySelectedClass from "../components/Pages/Dashboard/StudentDashboard/MySelectedClass/MySelectedClass";
+import Payment from "../components/Pages/Dashboard/StudentDashboard/Payment/Payment";
+import PaymentHistory from "../components/Pages/Dashboard/StudentDashboard/PaymentHistory/PaymentHistory";
+import ErrorPage from "../components/Pages/ErrorPage/ErrorPage";
+import Instructors from "../components/Pages/Instructors/Instructors";
 import Login from "../components/Pages/Login/Login";
 import Register from "../components/Pages/Register/Register";
-import Dashboard from "../Layout/Dashboard";
-import AddClass from "../components/Pages/Dashboard/InstructorDashboard/AddClass/AddClass";
-import TotalEnrolled from "../components/Pages/Dashboard/InstructorDashboard/TotalEnrolled/TotalEnrolled";
-import MyClasses from "../components/Pages/Dashboard/InstructorDashboard/MyClasses/MyClasses";
-import ManageUser from "../components/Pages/Dashboard/AdminDashboard/ManageUser/ManageUser";
-import ManageClasses from "../components/Pages/Dashboard/AdminDashboard/ManageClasses/ManageClasses";
-import AdminHome from "../components/Pages/Dashboard/AdminDashboard/AdminHome/AdminHome";
-import AdminRoute from "../AdminRoute/AdminRoute";
-import InstructorRoute from "../InstructorRoute/InstructorRoute";
-import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
-import ErrorPage from "../components/Pages/ErrorPage/ErrorPage";
-import Classes from "../components/Pages/Classes/Classes";
-import Instructors from "../components/Pages/Instructors/Instructors";
-import MySelectedClass from "../components/Pages/Dashboard/StudentDashboard/MySelectedClass/MySelectedClass";
-import StudentRoute from "../StudentRoute/StudentRoute";
-import MyEnrolledClass from "../components/Pages/Dashboard/StudentDashboard/MyEnrolledClass/MyEnrolledClass";
-import PaymentHistory from "../components/Pages/Dashboard/StudentDashboard/PaymentHistory/PaymentHistory";
-import Payment from "../components/Pages/Dashboard/StudentDashboard/Payment/Payment";
-import Feedback from "../components/Pages/Dashboard/AdminDashboard/Feedback/Feedback";
 
 const router = createBrowserRouter([
   {
@@ -100,7 +100,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "adminHome",
+        path: "admin",
         element: (
           <AdminRoute>
             <AdminHome></AdminHome>
