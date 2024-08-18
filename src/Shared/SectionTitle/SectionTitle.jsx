@@ -5,7 +5,7 @@ const SectionTitle = ({ heading, subHeading }) => {
       <h2 className="capitalize  text-xl mx-auto mt-2 font-extrabold border-purple-800 border-x-[2px] w-72 py-2 px-2 ">
         {heading}
       </h2>
-      <p className=" mt-2 text-base">~ {subHeading} ~</p>
+      <p className=" mt-2 text-base px-2">~ {subHeading} ~</p>
     </div>
   );
 };

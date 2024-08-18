@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import { AuthContext } from "../../../Context/AuthProvider";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import Swal from "sweetalert2";
-import { useLocation, useNavigate } from "react-router-dom";
 
 const ShowClasses = (classes) => {
   const { user } = useContext(AuthContext);
@@ -11,7 +11,7 @@ const ShowClasses = (classes) => {
   const navigate = useNavigate();
   const { availabeSeats, classImage, className, instructorName, price, _id } =
     classes.classes;
-  const handleSelectButton = (classes) => {
+  const handleSelectButton = () => {
     const classDetails = {
       ClassId: _id,
       availabeSeats,
@@ -19,11 +19,10 @@ const ShowClasses = (classes) => {
       instructorName,
       price,
       className,
-      email: user.email,
+      email: user?.email,
     };
-    if (user && user.email) {
+    if (user && user?.email) {
       axiosSecure.post("/selectClass", classDetails).then((data) => {
-        console.log(data);
         if (data.data.insertedId) {
           Swal.fire({
             position: "center",
@@ -56,8 +55,8 @@ const ShowClasses = (classes) => {
       <div
         className={` flex max-w-md justify-center items-center bg-gray-100  shadow-xl rounded-lg overflow-hidden`}
       >
-        <div className="w-1/3 h-40 px-2 justify-center flex items-center ">
-          <img className="rounded-lg" src={classImage} alt="Class Image" />
+        <div className="w-1/3  px-2 justify-center flex items-center ">
+          <img className="rounded-lg h-44" src={classImage} alt="Class Image" />
         </div>
         <div className="w-2/3 p-4">
           <h1 className="text-gray-900 font-bold text-[16px] md:text-xl">
