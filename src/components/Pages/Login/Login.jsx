@@ -99,6 +99,7 @@ const Login = () => {
                           type="email"
                           name="email"
                           id="email"
+                          defaultValue={"jubair123@mail.com"}
                           className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-md rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Enter Your Mail..."
                         />
@@ -124,6 +125,7 @@ const Login = () => {
                           })}
                           type={showPassword ? "text" : "password"}
                           name="password"
+                          defaultValue={"@#Jubair2097"}
                           id="password"
                           placeholder="Enter Your Password...."
                           className=" border border-gray-300 text-gray-900 sm:text-md rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -162,14 +164,16 @@ const Login = () => {
                             </label>
                           </div>
                         </div>
-                        <a
-                          href="#"
-                          className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
-                        >
+                        <p className="text-sm cursor-pointer font-medium text-primary-600 hover:underline dark:text-primary-500">
                           Forgot password?
-                        </a>
+                        </p>
                       </div>
                       <p className="text-red-600 text-sm">{error}</p>
+                      <p className=" font-poppins font-medium my-2 text-base text-orange-600">
+                        {
+                          "(N:B:) The default value is admin credentials (If you don't have account? create your own account)"
+                        }
+                      </p>
                       <button
                         type="submit"
                         className="w-full mt-5 text-md bg-violet-600 text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
