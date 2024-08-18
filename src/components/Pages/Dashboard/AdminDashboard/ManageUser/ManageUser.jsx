@@ -1,14 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import { data } from "autoprefixer";
-import React, { useState } from "react";
+
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { FaRegTrashAlt, FaUserShield } from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
-import { motion } from "framer-motion";
 
 const ManageUser = () => {
-  const [isAdmin, setAdmin] = useState(false);
   const [isInstructor, setInstructor] = useState(false);
   const [axiosSecure] = useAxiosSecure();
   const { data: users = [], refetch } = useQuery(["users"], async () => {
@@ -135,7 +134,13 @@ const ManageUser = () => {
 
                   <td>
                     <button
-                      // onClick={() => handleDelete(user)}
+                      onClick={() =>
+                        Swal.fire({
+                          title: "Sorry!!",
+                          text: "You don't have access to delete this user",
+                          icon: "warning",
+                        })
+                      }
                       className="btn btn-ghost bg-red-600  text-white"
                     >
                       <FaRegTrashAlt></FaRegTrashAlt>
