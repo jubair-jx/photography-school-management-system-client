@@ -12,6 +12,7 @@ import Feedback from "../components/Pages/Dashboard/AdminDashboard/Feedback/Feed
 import ManageClasses from "../components/Pages/Dashboard/AdminDashboard/ManageClasses/ManageClasses";
 import ManageUser from "../components/Pages/Dashboard/AdminDashboard/ManageUser/ManageUser";
 import AddClass from "../components/Pages/Dashboard/InstructorDashboard/AddClass/AddClass";
+import InstructorHome from "../components/Pages/Dashboard/InstructorDashboard/InstructorHome/InstructorHome";
 import MyClasses from "../components/Pages/Dashboard/InstructorDashboard/MyClasses/MyClasses";
 import TotalEnrolled from "../components/Pages/Dashboard/InstructorDashboard/TotalEnrolled/TotalEnrolled";
 import MyEnrolledClass from "../components/Pages/Dashboard/StudentDashboard/MyEnrolledClass/MyEnrolledClass";
@@ -81,6 +82,14 @@ const router = createBrowserRouter([
         element: (
           <InstructorRoute>
             <MyClasses></MyClasses>
+          </InstructorRoute>
+        ),
+      },
+      {
+        path: "instructor",
+        element: (
+          <InstructorRoute>
+            <InstructorHome />
           </InstructorRoute>
         ),
       },
