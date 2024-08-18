@@ -67,7 +67,7 @@ const Login = () => {
               <div className="flex flex-col items-center justify-center   mx-auto ">
                 <a
                   href="#"
-                  className="flex gap-2 items-center mb-6 text-2xl font-semibold text-gray-900 "
+                  className="flex gap-2 items-center mb-6 text-2xl font-semibold"
                 >
                   <img className="w-10 rounded-3xl" src={Logo} alt="" />
                   <h2

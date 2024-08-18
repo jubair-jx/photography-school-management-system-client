@@ -3,7 +3,7 @@ const Contact = () => {
     <div className="" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  text-center">
         <h2 className="text-4xl font-semibold">Contact</h2>
-        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-gray-400">
+        <p className=" pb-6 text-base max-w-2xl text-center m-auto dark:text-gray-400">
           Want to contact us? Choose an option below and well be happy to show
           you how we can transform companys web experience.
         </p>

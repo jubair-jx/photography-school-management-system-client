@@ -59,7 +59,7 @@ function Faq() {
         data-aos="fade-down"
         className="grid xl:grid-cols-2 container my-8"
       >
-        <div className="space-y-4">
+        <div className="space-y-8">
           {FaqData.map((item, index) => (
             <div
               key={item.id}
