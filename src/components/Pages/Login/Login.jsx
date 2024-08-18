@@ -13,8 +13,8 @@ import Logo from "../../../assets/logo.png";
 const Login = () => {
   //TODO: Some Upgradtion Here
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState("");
-  const { signIn, googleSignIn } = useContext(AuthContext);
+  const [error] = useState("");
+  const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -34,7 +34,7 @@ const Login = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    signIn(data.email, data.password).then((result) => {
+    signIn(data.email, data.password).then(() => {
       Swal.fire({
         position: "center",
         icon: "success",

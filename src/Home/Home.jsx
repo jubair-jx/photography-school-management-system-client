@@ -8,6 +8,7 @@ import Faq from "../components/Home/FAQ/FAQ";
 import Featured from "../components/Home/Featured/Featured";
 import PopularClasses from "../components/Home/PopularClasses/PopularClasses";
 import PopularInstructor from "../components/Home/PopularInstructor/PopularInstructor";
+import Pricing from "../components/Home/Priceing/Pricing";
 import Testimonial from "../components/Home/Testimonial/Testimonial";
 const Home = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const Home = () => {
       <PopularInstructor></PopularInstructor>
       <Featured />
       <Testimonial></Testimonial>
+      <Pricing />
       <Faq />
       <Contact />
     </div>

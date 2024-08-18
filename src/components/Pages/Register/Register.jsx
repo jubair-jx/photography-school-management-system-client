@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
@@ -16,7 +16,7 @@ const Register = () => {
       once: false,
     });
   }, []);
-  const [error, setError] = useState("");
+  const [error] = useState("");
   const navigate = useNavigate();
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const {
